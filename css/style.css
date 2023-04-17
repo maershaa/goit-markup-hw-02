@@ -1,0 +1,201 @@
+/* ОБЩИЙ СТИЛЬ ДЛЯ ВСЕХ СТРАНИЦ/*
+
+
+
+
+/* primary-text-color (IRIS) - #4D5AE5 */
+
+/* primary-text-color-active (Ocean): #404BBF; */
+
+/* title-text-color - основной цвет заголовков текста (NAVY_BLUE) #2E2F42;  */
+
+/* body-text-color - основной цвет описания маленьких фрагментов текста например 
+должностей и качеств компании (SLATE)(маленькие р) #434455 */
+
+/* accent-color - Цвет акцента (cornflower) #E7E9FC */
+
+/* page-background-color белый цвет фона страницы и гланвого заголовка(WHITE) #FFFFFF */
+
+/* белый цвет (футер и лого футера) - #F4F4FD */
+
+/* фон секции 4 (команда) #F4F4FD */
+
+:root {
+    /* IRIS */
+    --primary-text-color: #4D5AE5;
+
+    /* OCEAN */
+    --primary-text-color-active: #404BBF;
+
+    /* NAVY_BLUE */
+    --title-text-color: #2E2F42;
+
+    /* SLATE */
+    --body-text-color: #434455;
+
+    /* CORNFLOVER */
+    --accent-color: #E7E9FC;
+
+    /* _WHITE_ */
+    --page-background-color: #FFFFFF;
+
+    /* CLOUD */
+    --footer-text-color: #F4F4FD;
+}
+
+.body {
+    color: var(--body-text-color);
+    background: var(--page-background-color);
+
+    font-family: Roboto, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+h2,
+h3 {
+    color: var(--body-text-color);
+}
+
+/* Убираем нумерацию и иное маркирование в списках */
+.list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-style {
+    font-family: Raleway, sans-serif;
+    letter-spacing: 0.03em;
+}
+.nav-logo {
+    color: var(--primary-text-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16px;
+}
+
+.site-nav .link {
+        font-weight: 500;
+}
+
+/* Стиль для элементов списка (навигация) ПРИ НАЖАТИИ*/
+.site-nav .link:active {
+color: var(--primary-text-color-active);
+}
+
+/* Стиль для элементов списка (навигация) 
+ВО ВРЕМЯ НАХОЖДЕНИЯ НА ИМЕННО ЭТОЙ СТРАНИЧКЕ*/
+.site-nav .link.current {
+    color: var(--primary-text-color-active);
+}
+
+/* Стиль для элементов списка (номер телефона и почта в шапке */
+/* .header-address a {
+        
+} */
+
+/* Стиль для элементов списка (номер телефона и почта в шапке) ПРИ НАВЕДЕНИИ*/
+.header-address a:hover,
+.header-address a:focus {
+color: var(--primary-text-color-active);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--title-text-color);
+    color: var(--footer-text-color);
+}
+
+.footer-logo {
+    color: var(--footer-text-color);
+}
+
+
+
+
+/* СТИЛИ ГЛАВНОЙ СТРАНИЦЫ */
+
+/* BUTTON */
+button {
+    background-color: var(--primary-text-color);
+    color: var(--page-background-color);
+
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    font-weight: 500;
+
+    cursor:pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--primary-text-color-active);
+}
+
+
+/* СЕКЦИЯ 1 (главная)*/
+.hero {
+    background-color: var(--title-text-color);
+}
+
+/* Стиль главного заголовка страницы (h1) */
+.hero-title {
+    color: var(--page-background-color);
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+}
+
+/* СЕКЦИЯ 2 */
+
+/* Общий стиль для аналогчиных заголовков секции  2 и 4 */
+.goals-list .tittle,
+.team-list .title,
+.portfolio-items h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+}
+
+/* Общий стиль для аналогчиных абзацев секции  2 и 4 */
+/* .goals-list p,
+.team-list p,
+.portfolio-items p {      
+        font-size: 16px;
+} */
+
+/* СЕКЦИЯ 3 */
+.section .section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+}
+
+/* СЕКЦИЯ 4 */
+
+
+
+/* СТИЛИ СТРАНИЦЫ ПОРТФОЛИО */
+
+.porfolio button{
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+
+
+  
+}
+
+.porfolio button:hover,
+.porfolio button:focus{
+    color: var(--page-background-color);
+    background-color: var(--primary-text-color-active);
+}

@@ -43,7 +43,7 @@
     --footer-text-color: #F4F4FD;
 }
 
-.body {
+body {
     color: var(--body-text-color);
     background: var(--page-background-color);
 
@@ -185,12 +185,13 @@ letter-spacing: 0.02em;
 
 /* Общий стиль для аналогчиных заголовков секции  2 и 4 */
 .goals-list .title,
-.team-list .title,
+.team-member .title,
 .portfolio-items h2 {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        color: var(--title-text-color);
 
 }
 
@@ -211,10 +212,19 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 text-align: center;
+text-transform: capitalize;
+color: var(--title-text-color);
+letter-spacing: 0.02em;
+
 }
 
+.team-member {
+background-color: var(--page-background-color);
+}
 /* СЕКЦИЯ 4 */
-
+.team {
+    background-color: #FFFFFF;
+}
 
 
 /* СТИЛИ СТРАНИЦЫ ПОРТФОЛИО */

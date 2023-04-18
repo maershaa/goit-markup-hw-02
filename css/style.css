@@ -44,10 +44,10 @@
 }
 
 body {
-    color: var(--body-text-color);
-    background: var(--page-background-color);
+    color: #434455;
+    background-color: var(--page-background-color);
 
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -105,7 +105,7 @@ color: var(--primary-text-color-active);
 }
 
 /* Стиль для элементов списка (номер телефона и почта в шапке */
-.header-address a {
+.header-address {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -113,11 +113,20 @@ color: var(--primary-text-color-active);
     line-height: 24px;
 }
 
+/* Стиль для элементов списка (номер телефона и почта в шапке) */
+.e-mail,
+.phone-number {
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+}
+
 /* Стиль для элементов списка (номер телефона и почта в шапке) ПРИ НАВЕДЕНИИ*/
 .header-address a:hover,
 .header-address a:focus {
-color: var(--primary-text-color-active);
+color: #404BBF;
 }
+
+
 
 /* Стиль для всех элементов р */
 .text {
@@ -229,7 +238,7 @@ background-color: var(--page-background-color);
 
 /* СТИЛИ СТРАНИЦЫ ПОРТФОЛИО */
 
-.potfolio-nav-buttons {
+.potfolio-nav-buttons button{
     color: var(--primary-text-color);
     background-color: var(--accent-color);
 
@@ -240,6 +249,9 @@ background-color: var(--page-background-color);
         text-align: center;
         letter-spacing: 0.04em;
         line-height: inherit;
+        font-size: 16px;
+        line-height: 1.5;
+
 
         cursor: pointer;
 
@@ -248,6 +260,6 @@ background-color: var(--page-background-color);
 
 .potfolio-nav-buttons:hover,
 .potfolio-nav-buttons:focus{
-    color: var(--page-background-color);
+    color: #FFFFFF;
     background-color: var(--primary-text-color-active);
 }

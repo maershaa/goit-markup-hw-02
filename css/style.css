@@ -56,6 +56,7 @@
 h2,
 h3 {
     color: var(--body-text-color);
+    font-family: Roboto, sans-serif;
 }
 
 /* Убираем нумерацию и иное маркирование в списках */
@@ -63,6 +64,7 @@ h3 {
     list-style: none;
 }
 
+/* Убираем подчеркивание у ссылок */
 .link {
     text-decoration: none;
 }
@@ -88,6 +90,7 @@ h3 {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--title-text-color);
+        font-family: Roboto, sans-serif;
 }
 
 /* Стиль для элементов списка (навигация) ПРИ НАЖАТИИ*/
@@ -102,15 +105,29 @@ color: var(--primary-text-color-active);
 }
 
 /* Стиль для элементов списка (номер телефона и почта в шапке */
-/* .header-address a {
-        
-} */
+.header-address a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
 
 /* Стиль для элементов списка (номер телефона и почта в шапке) ПРИ НАВЕДЕНИИ*/
 .header-address a:hover,
 .header-address a:focus {
 color: var(--primary-text-color-active);
 }
+
+/* Стиль для всех элементов р */
+.text {
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+
 
 /* Footer */
 .footer {
@@ -133,13 +150,12 @@ color: var(--primary-text-color-active);
     background-color: var(--primary-text-color);
     color: var(--page-background-color);
 
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-family: inherit;
+    font-size: inherit;
     font-weight: 500;
     align-items: center;
     letter-spacing: 0.04em;
     line-height: 1.5;
-    font-weight: 500;
 
     cursor:pointer;
 }
@@ -203,23 +219,25 @@ text-align: center;
 
 /* СТИЛИ СТРАНИЦЫ ПОРТФОЛИО */
 
-.porfolio-nav-buttons {
+.potfolio-nav-buttons {
     color: var(--primary-text-color);
     background-color: var(--accent-color);
 
-        font-size: 16px;
+        font-family: Roboto, sans-serif;
+        font-size: inherit;
         font-weight: 500;
         align-items: center;
+        text-align: center;
         letter-spacing: 0.04em;
-        line-height: 1.5;
-        font-weight: 500;
+        line-height: inherit;
 
         cursor: pointer;
+
     }
   
 
-.porfolio button:hover,
-.porfolio button:focus{
+.potfolio-nav-buttons:hover,
+.potfolio-nav-buttons:focus{
     color: var(--page-background-color);
     background-color: var(--primary-text-color-active);
 }

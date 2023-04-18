@@ -1,8 +1,5 @@
 /* ОБЩИЙ СТИЛЬ ДЛЯ ВСЕХ СТРАНИЦ/*
 
-
-
-
 /* primary-text-color (IRIS) - #4D5AE5 */
 
 /* primary-text-color-active (Ocean): #404BBF; */
@@ -20,7 +17,7 @@
 
 /* фон секции 4 (команда) #F4F4FD */
 
-:root {
+:root{
     /* IRIS */
     --primary-text-color: #4D5AE5;
 
@@ -44,10 +41,10 @@
 }
 
 .body {
-    color: var(--body-text-color);
-    background: var(--page-background-color);
+    color: #434455;
+    background: #FFFFFF;
 
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -55,8 +52,8 @@
 
 h2,
 h3 {
-    color: var(--body-text-color);
-    font-family: Roboto, sans-serif;
+    color: #434455;
+    font-family: "Roboto",sans-serif;
 }
 
 /* Убираем нумерацию и иное маркирование в списках */
@@ -105,8 +102,8 @@ color: var(--primary-text-color-active);
 }
 
 /* Стиль для элементов списка (номер телефона и почта в шапке */
-.header-address a {
-    font-family: 'Roboto';
+.header-address {
+    font-family: "Roboto",sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -121,7 +118,7 @@ color: var(--primary-text-color-active);
 
 /* Стиль для всех элементов р */
 .text {
-font-family: 'Roboto';
+font-family: "Roboto",sans-serif;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -147,7 +144,7 @@ letter-spacing: 0.02em;
 .main-button
  {
     background-color: var(--primary-text-color);
-    color: var(--page-background-color);
+    color: #FFFFFF;
 
     font-family: inherit;
     font-size: inherit;
@@ -172,7 +169,7 @@ letter-spacing: 0.02em;
 
 /* Стиль главного заголовка страницы (h1) */
 .hero-title {
-    color: var(--page-background-color);
+    color: #FFFFFF;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
@@ -200,7 +197,7 @@ letter-spacing: 0.02em;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--body-text-color);
+        color: #434455;
 
 }
 
@@ -222,7 +219,7 @@ text-align: center;
     color: var(--primary-text-color);
     background-color: var(--accent-color);
 
-        font-family: Roboto, sans-serif;
+        font-family: "Roboto",sans-serif;
         font-size: inherit;
         font-weight: 500;
         align-items: center;
@@ -237,6 +234,6 @@ text-align: center;
 
 .potfolio-nav-buttons:hover,
 .potfolio-nav-buttons:focus{
-    color: var(--page-background-color);
+    color: #FFFFFF;
     background-color: var(--primary-text-color-active);
 }

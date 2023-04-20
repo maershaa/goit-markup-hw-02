@@ -114,8 +114,7 @@ h3 {
 }
 
 /* Стиль для элементов списка (номер телефона и почта в шапке) */
-.e-mail,
-.phone-number {
+.header-address .link {
     letter-spacing: 0.02em;
     color: var(--body-text-color);
 }

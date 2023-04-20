@@ -28,7 +28,7 @@
     --primary-text-color-active: #404BBF;
 
     /* NAVY_BLUE */
-    --title-text-color: #2E2F42;
+    --title-text-color: #2e2f42;
 
     /* SLATE */
     --body-text-color: #434455;
@@ -97,7 +97,11 @@ h3 {
 .site-nav .link:active {
 color: var(--primary-text-color-active);
 }
-
+/* Стиль для элементов списка (номер телефона и почта в шапке) ПРИ НАВЕДЕНИИ*/
+.header-address a:hover,
+.header-address a:focus {
+    color: #404bbf;
+}
 /* Стиль для элементов списка (навигация) 
 ВО ВРЕМЯ НАХОЖДЕНИЯ НА ИМЕННО ЭТОЙ СТРАНИЧКЕ*/
 .site-nav .link.current {
@@ -123,7 +127,7 @@ color: var(--primary-text-color-active);
 /* Стиль для элементов списка (номер телефона и почта в шапке) ПРИ НАВЕДЕНИИ*/
 .header-address a:hover,
 .header-address a:focus {
-color: #404BBF;
+color: #404bbf;
 }
 
 
@@ -228,7 +232,7 @@ letter-spacing: 0.02em;
 }
 
 .team-member {
-background-color: var(--page-background-color);
+background-color: #F4F4FD;
 }
 /* СЕКЦИЯ 4 */
 .team {
@@ -238,11 +242,11 @@ background-color: var(--page-background-color);
 
 /* СТИЛИ СТРАНИЦЫ ПОРТФОЛИО */
 
-.potfolio-nav-buttons button{
+.potfolio-nav-buttons button {
     color: var(--primary-text-color);
     background-color: var(--accent-color);
 
-        font-family: Roboto, sans-serif;
+        font-family: inherit;
         font-size: inherit;
         font-weight: 500;
         align-items: center;
